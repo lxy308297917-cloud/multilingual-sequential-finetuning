@@ -1,0 +1,66 @@
+{
+  "id": "massive-qwen3-4b-single-slot-order-v1",
+  "seed": 42,
+  "languages": [
+    "de-DE",
+    "ar-SA",
+    "vi-VN",
+    "ur-PK",
+    "sw-KE"
+  ],
+  "extra_evaluation": [
+    "en-US"
+  ],
+  "train_rows_per_language": 2000,
+  "effective_batch": 16,
+  "micro_batch": 4,
+  "progress_steps": [
+    31,
+    63,
+    94,
+    125
+  ],
+  "learning_rate": 5e-05,
+  "warmup_steps": 16,
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "bias": "none",
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "replay_buffer": 1000,
+  "replay_input_fraction": 0.1,
+  "replay_max_fraction_error": 0.002,
+  "generation": {
+    "max_new_tokens": 192,
+    "temperature": 0,
+    "top_p": 1,
+    "stop_token_ids": [
+      151645,
+      151643
+    ],
+    "max_model_len": 1536,
+    "max_num_seqs": 64,
+    "max_num_batched_tokens": 8192,
+    "submit_batch": 128
+  },
+  "developer_split": "dev",
+  "confirmation_split": "test",
+  "evaluation_order": [
+    "de-DE",
+    "ar-SA",
+    "vi-VN",
+    "sw-KE",
+    "ur-PK",
+    "en-US"
+  ]
+}

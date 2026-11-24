@@ -1,0 +1,66 @@
+{
+  "benchmark": "massive",
+  "arm": "full-replay",
+  "order": [
+    "de-DE",
+    "ar-SA",
+    "vi-VN",
+    "ur-PK",
+    "sw-KE"
+  ],
+  "seed": 42,
+  "learning_rate": 5e-05,
+  "warmup_steps": 16,
+  "micro_batch": 4,
+  "steps_per_stage": 125,
+  "max_context": 1536,
+  "data": "work/massive-cl-single-order-v1-data",
+  "manifest_sha256": "f2c169f3fad3dc6677684fe2704f5c5f0e64a030a33f19f39de09767d2892564",
+  "stages": [
+    {
+      "name": "01_de-DE",
+      "file": "train_de-DE.jsonl",
+      "rows": 2000,
+      "input_tokens": 1234761,
+      "supervised_tokens": 40265,
+      "replay_input_tokens": 0
+    },
+    {
+      "name": "02_ar-SA",
+      "file": "replay_ar-SA.jsonl",
+      "rows": 2000,
+      "input_tokens": 1235015,
+      "supervised_tokens": 40585,
+      "replay_input_tokens": 123632
+    },
+    {
+      "name": "03_vi-VN",
+      "file": "replay_vi-VN.jsonl",
+      "rows": 2000,
+      "input_tokens": 1236592,
+      "supervised_tokens": 42296,
+      "replay_input_tokens": 123693
+    },
+    {
+      "name": "04_ur-PK",
+      "file": "replay_ur-PK.jsonl",
+      "rows": 2000,
+      "input_tokens": 1267093,
+      "supervised_tokens": 44557,
+      "replay_input_tokens": 126587
+    },
+    {
+      "name": "05_sw-KE",
+      "file": "replay_sw-KE.jsonl",
+      "rows": 2000,
+      "input_tokens": 1244928,
+      "supervised_tokens": 41647,
+      "replay_input_tokens": 125123
+    }
+  ],
+  "reused_first": {
+    "path": "local/checkpoints/massive_full_sft_v1_20261121/train/01_de-DE",
+    "certificate_sha256": "e3ded17e29ec52a8e77e3c7880db7eca82a53eff031dc443df53dd95369979dd",
+    "global_step": 125
+  }
+}

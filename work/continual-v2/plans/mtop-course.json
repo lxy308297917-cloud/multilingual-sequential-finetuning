@@ -1,0 +1,190 @@
+{
+  "benchmark": "mtop",
+  "arm": "course-v2",
+  "order": [
+    "fr",
+    "es",
+    "hi",
+    "de",
+    "th"
+  ],
+  "seed": 42,
+  "learning_rate": 5e-05,
+  "warmup_steps": 16,
+  "micro_batch": 2,
+  "steps_per_stage": 64,
+  "max_context": 2048,
+  "protocol": "outputs/continual-bench-next/mtop/protocol.json",
+  "protocol_sha256": "19d3a1bfe4f8da248906997a252bfae13aec35f496dc169faad4e88daa8cf865",
+  "matched_lora": {
+    "fr": {
+      "path": "local/checkpoints/mtop_flat_qwen3_recovery_v1_20261122/single/fr/step-064",
+      "certificate_sha256": "21defb90e0f0f5dd768c00fb14043a2adcf9c4b298b0cbdb400dfbd1b1e79756",
+      "step": 64,
+      "score": {
+        "path": "local/logs/continual_bench_next_20261122/mtop-screen-recovery/single_fr/fr.DONE.json",
+        "certificate_sha256": "e13587bab0086193026ec10b80e40c4279c1dc2d1c9439014ac38caf355c3923",
+        "f1": 41.55844155844156,
+        "n": 1577,
+        "valid": 1523
+      }
+    },
+    "es": {
+      "path": "local/checkpoints/mtop_flat_qwen3_recovery_v1_20261122/single/es/step-064",
+      "certificate_sha256": "670b653f9d6a321c88a4129d63dbff825c4471603f2d5c00542ae175ce486950",
+      "step": 64,
+      "score": {
+        "path": "local/logs/continual_bench_next_20261122/mtop-screen-recovery/single_es/es.DONE.json",
+        "certificate_sha256": "c6a59791aaae39ea6b21849afb93c53e41c968c90a23b0eebd375c933c80ffde",
+        "f1": 40.31522189962671,
+        "n": 1527,
+        "valid": 1479
+      }
+    },
+    "hi": {
+      "path": "local/checkpoints/mtop_flat_qwen3_recovery_v1_20261122/single/hi/step-064",
+      "certificate_sha256": "ffa76acd9eaccca13ec68121e0f278d851fda1ce5ad9e4629a26d61f36c95791",
+      "step": 64,
+      "score": {
+        "path": "local/logs/continual_bench_next_20261122/mtop-screen-recovery/single_hi/hi.DONE.json",
+        "certificate_sha256": "506b4514e7f2d3395a51d135f0d6fadc248ab8408987eb63024fd72eca1eb5f0",
+        "f1": 37.56495916852264,
+        "n": 2012,
+        "valid": 1975
+      }
+    },
+    "de": {
+      "path": "local/checkpoints/mtop_flat_qwen3_recovery_v1_20261122/single/de/step-064",
+      "certificate_sha256": "f711dbc5de6a6bcbeb46f2a726692d3e47285465f27b3116ac2e66a57de5381f",
+      "step": 64,
+      "score": {
+        "path": "local/logs/continual_bench_next_20261122/mtop-screen-recovery/single_de/de.DONE.json",
+        "certificate_sha256": "ba20115308ec43944ae9cda03c7fe20f0cffaa7a8af637663e7edc01b3d7d064",
+        "f1": 37.485409371352354,
+        "n": 1815,
+        "valid": 1779
+      }
+    },
+    "th": {
+      "path": "local/checkpoints/mtop_flat_qwen3_recovery_v1_20261122/single/th/step-064",
+      "certificate_sha256": "6bfa23eaa7b0198cdec0276afa5eb12ef92fa32d362ed8a5c414e1218e826b31",
+      "step": 64,
+      "score": {
+        "path": "local/logs/continual_bench_next_20261122/mtop-screen-recovery/single_th/th.DONE.json",
+        "certificate_sha256": "e451e37e4285e1cdd9215e9b409f5c8ef9028381e9f16e106f76921c9583bece",
+        "f1": 33.32674441589247,
+        "n": 1671,
+        "valid": 1630
+      }
+    }
+  },
+  "candidate_single_scores": {},
+  "sequential": [
+    {
+      "name": "01_fr",
+      "file": "train_fr.jsonl",
+      "rows": 1024,
+      "input_tokens": 1470337,
+      "supervised_tokens": 28262
+    },
+    {
+      "name": "02_es",
+      "file": "train_es.jsonl",
+      "rows": 1024,
+      "input_tokens": 1470567,
+      "supervised_tokens": 28408
+    },
+    {
+      "name": "03_hi",
+      "file": "train_hi.jsonl",
+      "rows": 1024,
+      "input_tokens": 1491455,
+      "supervised_tokens": 29125
+    },
+    {
+      "name": "04_de",
+      "file": "train_de.jsonl",
+      "rows": 1024,
+      "input_tokens": 1468649,
+      "supervised_tokens": 28912
+    },
+    {
+      "name": "05_th",
+      "file": "train_th.jsonl",
+      "rows": 1024,
+      "input_tokens": 1478244,
+      "supervised_tokens": 27950
+    }
+  ],
+  "replay": [
+    {
+      "name": "01_fr",
+      "file": "train_fr.jsonl",
+      "rows": 1024,
+      "input_tokens": 1470337,
+      "supervised_tokens": 28262
+    },
+    {
+      "name": "02_es",
+      "file": "replay_es.jsonl",
+      "rows": 1024,
+      "input_tokens": 1470567,
+      "supervised_tokens": 28408
+    },
+    {
+      "name": "03_hi",
+      "file": "replay_hi.jsonl",
+      "rows": 1024,
+      "input_tokens": 1491455,
+      "supervised_tokens": 29125
+    },
+    {
+      "name": "04_de",
+      "file": "replay_de.jsonl",
+      "rows": 1024,
+      "input_tokens": 1468649,
+      "supervised_tokens": 28912
+    },
+    {
+      "name": "05_th",
+      "file": "replay_th.jsonl",
+      "rows": 1024,
+      "input_tokens": 1478244,
+      "supervised_tokens": 27950
+    }
+  ],
+  "single": {
+    "fr": {
+      "rows": 1024,
+      "input_tokens": 1470337,
+      "supervised_tokens": 28262
+    },
+    "es": {
+      "rows": 1024,
+      "input_tokens": 1470567,
+      "supervised_tokens": 28408
+    },
+    "hi": {
+      "rows": 1024,
+      "input_tokens": 1491455,
+      "supervised_tokens": 29125
+    },
+    "de": {
+      "rows": 1024,
+      "input_tokens": 1468649,
+      "supervised_tokens": 28912
+    },
+    "th": {
+      "rows": 1024,
+      "input_tokens": 1478244,
+      "supervised_tokens": 27950
+    }
+  },
+  "joint": {
+    "rows": 5120,
+    "input_tokens": 7379252,
+    "supervised_tokens": 142657
+  },
+  "data": "work/continual-v2/mtop-course",
+  "manifest_sha256": "60593a805f57893fbe4aa46759bf81d745e85d3e6d8479b6ddae9b5eb6c90117"
+}

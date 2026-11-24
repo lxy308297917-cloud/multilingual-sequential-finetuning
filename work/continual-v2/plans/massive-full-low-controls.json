@@ -1,0 +1,56 @@
+{
+  "benchmark": "massive",
+  "arm": "full-low-controls",
+  "order": [
+    "de-DE",
+    "ar-SA",
+    "vi-VN",
+    "sw-KE",
+    "ur-PK"
+  ],
+  "seed": 42,
+  "learning_rate": 1e-05,
+  "warmup_steps": 16,
+  "micro_batch": 4,
+  "steps_per_stage": 125,
+  "max_context": 1536,
+  "reused_single_de": {
+    "path": "local/checkpoints/massive_full_sft_low_lr_v1_20261122/train/01_de-DE",
+    "certificate_sha256": "51a07daf7b8492f25afee2f71060593f75dcbfe4f0cf68878a2582bc6ee9418a",
+    "global_step": 125
+  },
+  "data": "work/massive-cl-v1-data",
+  "manifest_sha256": "dc877202e9be9bc499a3d3468fec194a289568e4f04d778319dc1fd8476960d9",
+  "single": {
+    "de-DE": {
+      "rows": 2000,
+      "input_tokens": 1234761,
+      "supervised_tokens": 40265
+    },
+    "ar-SA": {
+      "rows": 2000,
+      "input_tokens": 1235015,
+      "supervised_tokens": 40585
+    },
+    "vi-VN": {
+      "rows": 2000,
+      "input_tokens": 1236592,
+      "supervised_tokens": 42296
+    },
+    "sw-KE": {
+      "rows": 2000,
+      "input_tokens": 1244928,
+      "supervised_tokens": 41647
+    },
+    "ur-PK": {
+      "rows": 2000,
+      "input_tokens": 1267093,
+      "supervised_tokens": 44557
+    }
+  },
+  "joint": {
+    "rows": 10000,
+    "input_tokens": 6218389,
+    "supervised_tokens": 209350
+  }
+}

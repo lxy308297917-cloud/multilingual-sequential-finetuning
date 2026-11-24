@@ -1,0 +1,189 @@
+{
+  "seed": 42,
+  "a_parents": {
+    "04_sw-KE": {
+      "adapter/adapter_model.safetensors": "d17b7dd3f5cc5c58f061d83b97905b19dc8aadad4d80156c7b932add67cc198f",
+      "adapter/adapter_config.json": "2631cac4fe9e2ab7835a4c2d676a33499e9308b26fcf76167b7ccc78f822fed4",
+      "training_state.pt": "0e227122f6a676f5881d14fd3d8fc6308032089a989a74e019d05d46bb2e6db4"
+    },
+    "05_ur-PK": {
+      "adapter/adapter_model.safetensors": "f72d3e270ea6e880cdd2272a32f72ea853ee392d1a20d6f9083531c997a55970",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a",
+      "training_state.pt": "e610ccc0bba43264cb814c5d3036f2cbe3893fa651fc570de4c408f196ee2cf6"
+    }
+  },
+  "a_arms": {
+    "random_0.5": {
+      "adapter/adapter_model.safetensors": "d1c6cf6bfb88e277d2d5f456b3aa67ff4bfac11103cfe139bfb53ac90afb74e1",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "format_0.5": {
+      "adapter/adapter_model.safetensors": "ed078b5ed89c95ff3ee32d258123465225aceb0df10994492da4f4bbfd736abf",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "old_loss_0.125": {
+      "adapter/adapter_model.safetensors": "57474974bebf97971178b7111c04442ffd7c77e37960ea31093e309f7252b05b",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "format_0.125": {
+      "adapter/adapter_model.safetensors": "e61351bed8ff0ae0e423eb064dbd420c0bea631bda52d57c07dddc309ebce939",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "old_loss_0.25": {
+      "adapter/adapter_model.safetensors": "4e6930204bd0f0b4bf733bfb8540d007a346126abed0cb174d4c7a652202ceff",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "random_0.125": {
+      "adapter/adapter_model.safetensors": "1cbdef5483eeb69871b020c8307f4e17faf3545cd4f618eaaebc18c98286bc61",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "uniform_0.125": {
+      "adapter/adapter_model.safetensors": "15025c4f2d4a9837ea7725f5e8d8370fd795fa5e6cff16692562d8be6794cb7c",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "uniform_0.25": {
+      "adapter/adapter_model.safetensors": "408276ac3e99a717629e872bf61c255039b64216e665ca4901a7331bc8632ec0",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "old_loss_0.5": {
+      "adapter/adapter_model.safetensors": "e71bd35aa07ad5f6705e70180f905eee9bc4ba65df360057e098293fd6e60a3e",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "functional_0.25": {
+      "adapter/adapter_model.safetensors": "71c302af98f37e955034e5220e84d95c0f09708b79e62658d32e11c4deddc243",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "functional_0.125": {
+      "adapter/adapter_model.safetensors": "5277de1c95378a9818dea2f43d2b9dde3a2da0574112eb6c0332f4450045c7b0",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "format_0.25": {
+      "adapter/adapter_model.safetensors": "856658f3bb635482ab124a5155c871ef1177c60bac17116b0344ecc7ae28b014",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "functional_0.5": {
+      "adapter/adapter_model.safetensors": "1562746cb9938d1a29bb38e6673ffcd62ef95127f5ee932b4d908f8c462379ba",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "random_0.25": {
+      "adapter/adapter_model.safetensors": "1df2bcd1295ba7e64080b8218047e5bef09df4383db9696ddf1cd7edb8ff3fbf",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    },
+    "uniform_0.5": {
+      "adapter/adapter_model.safetensors": "2167faaa6fa2bdce4661c85a3e6a8fb3ef310cf36bd78e8765e965f14637f356",
+      "adapter/adapter_config.json": "b2ac6c1904bd1cc27798bc1b21f585171cd963091946135a2a97170061a4b57a"
+    }
+  },
+  "a_direction_gpu": 550.3873834260739,
+  "b_training": {
+    "parallel": {
+      "seed": 42,
+      "gpu": "GPU-6f39cd66-8deb-a8bb-1b2e-8b96432fa573",
+      "seconds": 954.0990039801691,
+      "peak_bytes": 11857297408,
+      "global_step": 625,
+      "input_tokens": {
+        "ur-PK": 1137156,
+        "de-DE": 31103,
+        "sw-KE": 31194,
+        "ar-SA": 31098,
+        "vi-VN": 31151
+      },
+      "supervised_tokens": {
+        "ur-PK": 39379,
+        "de-DE": 770,
+        "sw-KE": 570,
+        "ar-SA": 767,
+        "vi-VN": 762
+      },
+      "rows": {
+        "ur-PK": 1796,
+        "de-DE": 51,
+        "sw-KE": 51,
+        "ar-SA": 51,
+        "vi-VN": 51
+      },
+      "continued_from_sha256": "dce0435309d2a25f647da983c9ec3c2acce12746c984158b3ddf099b26c7b7a2",
+      "schedule_sha256": "c71ee2343b865c71ae6df7ad6768d7b684b82d51876316db5505217860e7c650",
+      "files": {
+        "adapter/adapter_model.safetensors": "52ed43598ef8558676931624da304926623ab7c9f3d2c2cface2d41d2d31eed6",
+        "adapter/adapter_config.json": "c2f2aff0b0754a2968e2e88491ccb370175bcf6bba1b7b861231824a2cecdb93",
+        "training_state.pt": "605b7da8e46f8081abf367314e128256aac90b1f57b351a543067f8dbedb9015"
+      }
+    },
+    "random": {
+      "seed": 42,
+      "gpu": "GPU-1a3a5c22-63f7-8edb-d112-4458bb5baa58",
+      "seconds": 943.3109311338048,
+      "peak_bytes": 11857297408,
+      "global_step": 625,
+      "input_tokens": {
+        "ur-PK": 1137156,
+        "de-DE": 31103,
+        "sw-KE": 31194,
+        "ar-SA": 31098,
+        "vi-VN": 31151
+      },
+      "supervised_tokens": {
+        "ur-PK": 39379,
+        "de-DE": 770,
+        "sw-KE": 570,
+        "ar-SA": 767,
+        "vi-VN": 762
+      },
+      "rows": {
+        "ur-PK": 1796,
+        "de-DE": 51,
+        "sw-KE": 51,
+        "ar-SA": 51,
+        "vi-VN": 51
+      },
+      "continued_from_sha256": "dce0435309d2a25f647da983c9ec3c2acce12746c984158b3ddf099b26c7b7a2",
+      "schedule_sha256": "9a58971ec925aba18048aaa33557dc42ddf27a8697ff08ec085209dc19618e12",
+      "files": {
+        "adapter/adapter_model.safetensors": "7d17a148682fd83d6ead94c99ecc0d2be8f3cc9f9fd53066e5f76c94847e284c",
+        "adapter/adapter_config.json": "5d91e8a1d86e55c61dbda73c6adbc1584f95236a5369afd691eb85cffa81c27f",
+        "training_state.pt": "5cb2fdc2d3395b9bb57f3d4a05dd52393c029767561d319651448b20eeadadee"
+      }
+    },
+    "label": {
+      "seed": 42,
+      "gpu": "GPU-38dc0691-ffb0-12c2-0770-84bd5f37be39",
+      "seconds": 946.3592329761013,
+      "peak_bytes": 11857297408,
+      "global_step": 625,
+      "input_tokens": {
+        "ur-PK": 1137156,
+        "de-DE": 31103,
+        "sw-KE": 31194,
+        "ar-SA": 31098,
+        "vi-VN": 31151
+      },
+      "supervised_tokens": {
+        "ur-PK": 39379,
+        "de-DE": 770,
+        "sw-KE": 570,
+        "ar-SA": 767,
+        "vi-VN": 762
+      },
+      "rows": {
+        "ur-PK": 1796,
+        "de-DE": 51,
+        "sw-KE": 51,
+        "ar-SA": 51,
+        "vi-VN": 51
+      },
+      "continued_from_sha256": "dce0435309d2a25f647da983c9ec3c2acce12746c984158b3ddf099b26c7b7a2",
+      "schedule_sha256": "24a28abb63612e5e6b32963879747d7ede62b5503cea19eaf79f85e71f2bc1d1",
+      "files": {
+        "adapter/adapter_model.safetensors": "99c31a421b3ceab2a3533b7bf26e7fe915b74918a1e4e7f27152d17ede8dce06",
+        "adapter/adapter_config.json": "dbc135b1a69ca60eadc17eae3485c4dd92a610770e1289231839e2813b930bcd",
+        "training_state.pt": "5815466c2b0d6147320f4a9936df1f05c0c7bd2deb9a9e156f4611e972c48fe5"
+      }
+    }
+  },
+  "a_dose_decode_gpu_seconds": 497.5176844736561,
+  "a_mechanism_decode_gpu_seconds": 351.14769650716335,
+  "a_minimum_decode_gpu_seconds": 577.7545775817707,
+  "b_dev_decode_gpu_seconds": 1278.0671509541571
+}

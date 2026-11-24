@@ -1,0 +1,67 @@
+{
+  "benchmark": "massive",
+  "arm": "full-replay",
+  "order": [
+    "de-DE",
+    "ar-SA",
+    "vi-VN",
+    "sw-KE",
+    "ur-PK"
+  ],
+  "seed": 42,
+  "learning_rate": 1e-05,
+  "warmup_steps": 16,
+  "micro_batch": 4,
+  "steps_per_stage": 125,
+  "max_context": 1536,
+  "data": "[external-path]",
+  "manifest_sha256": "dc877202e9be9bc499a3d3468fec194a289568e4f04d778319dc1fd8476960d9",
+  "stages": [
+    {
+      "name": "01_de-DE",
+      "file": "train_de-DE.jsonl",
+      "rows": 2000,
+      "input_tokens": 1234761,
+      "supervised_tokens": 40265,
+      "replay_input_tokens": 0
+    },
+    {
+      "name": "02_ar-SA",
+      "file": "replay_ar-SA.jsonl",
+      "rows": 2000,
+      "input_tokens": 1235015,
+      "supervised_tokens": 40585,
+      "replay_input_tokens": 123632
+    },
+    {
+      "name": "03_vi-VN",
+      "file": "replay_vi-VN.jsonl",
+      "rows": 2000,
+      "input_tokens": 1236592,
+      "supervised_tokens": 42296,
+      "replay_input_tokens": 123693
+    },
+    {
+      "name": "04_sw-KE",
+      "file": "replay_sw-KE.jsonl",
+      "rows": 2000,
+      "input_tokens": 1244928,
+      "supervised_tokens": 41647,
+      "replay_input_tokens": 124367
+    },
+    {
+      "name": "05_ur-PK",
+      "file": "replay_ur-PK.jsonl",
+      "rows": 2000,
+      "input_tokens": 1267093,
+      "supervised_tokens": 44557,
+      "replay_input_tokens": 126798
+    }
+  ],
+  "branch_parent": {
+    "path": "[external-path]",
+    "certificate_sha256": "2c41ca4411ce85e0353d2d4da51d1bd88b846e431a520df6b1f3528cd806c9f7",
+    "global_step": 500
+  },
+  "scope": "Only stage 5 changes from Sequential to Replay; first four stages were Sequential."
+}

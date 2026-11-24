@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "effective_batch": 16,
+  "micro_batch": 4,
+  "learning_rate": 0.00005,
+  "warmup_steps": 16,
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "bias": "none",
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+  },
+  "progress_steps": [64],
+  "generation": {"batch": 64, "max_sequences": 64, "max_batched_tokens": 8192, "stop_token_ids": [151645, 151643]}
+}

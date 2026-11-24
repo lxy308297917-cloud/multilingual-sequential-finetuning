@@ -1,0 +1,188 @@
+{
+  "source": {
+    "commit": "ba5843cd08aa491d5f96a5e809e71eb9ec461391",
+    "files": {
+      "data/hau/train.txt": {
+        "sha256": "54c537b644f246b1d1fca61318151f1e01bcd1039ac3df328aed520934bc6d0f",
+        "bytes": 1203831,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/hau/train.txt"
+      },
+      "data/hau/dev.txt": {
+        "sha256": "1eee64451c25a3c96ae7fd780446ba5b29bf4eaca1b70d1d2c4ebc9571a70951",
+        "bytes": 163878,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/hau/dev.txt"
+      },
+      "data/hau/test.txt": {
+        "sha256": "64c27e3e9ce2d47ee12e6e21ae2047cdc320ef9c65baec7d1f331189a881a234",
+        "bytes": 358507,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/hau/test.txt"
+      },
+      "data/yor/train.txt": {
+        "sha256": "0be68a94d2433677d08c9895f29cd246dff5c199f0e80face6db69f8fccbc94d",
+        "bytes": 1770270,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/yor/train.txt"
+      },
+      "data/yor/dev.txt": {
+        "sha256": "7b14a2a6abede574ab0abcbb59f06ba6fbf20629fa86dc660f9fec9a6dfa9441",
+        "bytes": 220135,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/yor/dev.txt"
+      },
+      "data/yor/test.txt": {
+        "sha256": "08a4b4cffa1ac1d80217cb371f6bacd13deaeed6c0fa43af5e69f13c42bc6ccd",
+        "bytes": 445732,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/yor/test.txt"
+      },
+      "data/swa/train.txt": {
+        "sha256": "bdc27d69d5fb4555e988490cc8bcdd4d7516fa3d81cb838ebe978418e52d13d1",
+        "bytes": 1520115,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/swa/train.txt"
+      },
+      "data/swa/dev.txt": {
+        "sha256": "9fb0d2c4e5b98e8b45bcc275bd63c08ac9b71dc8d40c187bfc0883d89dab86a0",
+        "bytes": 217848,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/swa/dev.txt"
+      },
+      "data/swa/test.txt": {
+        "sha256": "8a165881018514d8e24333e6e785f7e1774d0cdbde56cbc39b76dc87db7235d8",
+        "bytes": 442859,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/swa/test.txt"
+      },
+      "data/lug/train.txt": {
+        "sha256": "99cb8c486293b3582676d2f3f5cf1cb94bcebbb7f3661149adf209df9dd8c65b",
+        "bytes": 821977,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/lug/train.txt"
+      },
+      "data/lug/dev.txt": {
+        "sha256": "cd9bd5126b9596965748a82082cced9cd66f99611836c1fd10b52e0fe59c03c3",
+        "bytes": 115602,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/lug/dev.txt"
+      },
+      "data/lug/test.txt": {
+        "sha256": "025dd4b7036b21f30dca949fd35550b98c68f59c8b11b33e341cd3fc30adf433",
+        "bytes": 221155,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/data/lug/test.txt"
+      },
+      "README.md": {
+        "sha256": "1f3cc4fb7331b438ddaf932defd185df3491b4326d973ee1892d6767292df742",
+        "bytes": 8459,
+        "url": "https://raw.githubusercontent.com/masakhane-io/masakhane-ner/ba5843cd08aa491d5f96a5e809e71eb9ec461391/MasakhaNER2.0/README.md"
+      }
+    }
+  },
+  "order": [
+    "hau",
+    "yor",
+    "swa",
+    "lug"
+  ],
+  "stages": [
+    "01_hau",
+    "02_yor",
+    "03_swa",
+    "04_lug"
+  ],
+  "steps": 64,
+  "seed": 42,
+  "names": {
+    "hau": {
+      "train_total": 5716,
+      "dev_total": 816,
+      "test_total": 1633,
+      "train_overlap_removed": 204,
+      "dev_overlap_removed": 2,
+      "train_rows": 1024,
+      "dev_rows": 384,
+      "input_tokens": 252755,
+      "supervised_tokens": 15557,
+      "dev_max_gold": 72,
+      "test_max_gold": 160,
+      "training_entities": {
+        "PER": 605,
+        "LOC": 553,
+        "ORG": 328,
+        "DATE": 249
+      }
+    },
+    "yor": {
+      "train_total": 6876,
+      "dev_total": 983,
+      "test_total": 1964,
+      "train_overlap_removed": 60,
+      "dev_overlap_removed": 9,
+      "train_rows": 1024,
+      "dev_rows": 384,
+      "input_tokens": 269925,
+      "supervised_tokens": 15513,
+      "dev_max_gold": 69,
+      "test_max_gold": 88,
+      "training_entities": {
+        "PER": 576,
+        "LOC": 573,
+        "DATE": 238,
+        "ORG": 349
+      }
+    },
+    "swa": {
+      "train_total": 6593,
+      "dev_total": 942,
+      "test_total": 1883,
+      "train_overlap_removed": 18,
+      "dev_overlap_removed": 2,
+      "train_rows": 1024,
+      "dev_rows": 384,
+      "input_tokens": 265576,
+      "supervised_tokens": 19903,
+      "dev_max_gold": 94,
+      "test_max_gold": 105,
+      "training_entities": {
+        "PER": 597,
+        "DATE": 357,
+        "LOC": 966,
+        "ORG": 364
+      }
+    },
+    "lug": {
+      "train_total": 4942,
+      "dev_total": 706,
+      "test_total": 1412,
+      "train_overlap_removed": 0,
+      "dev_overlap_removed": 0,
+      "train_rows": 1024,
+      "dev_rows": 384,
+      "input_tokens": 209210,
+      "supervised_tokens": 13733,
+      "dev_max_gold": 61,
+      "test_max_gold": 71,
+      "training_entities": {
+        "LOC": 498,
+        "DATE": 171,
+        "PER": 569,
+        "ORG": 361
+      }
+    }
+  },
+  "files": {
+    "train_hau.jsonl": "c1ab0b76c8dffb3dd6406e49ceda86aca58cfbb6ab9d2f848b05d86190837e5a",
+    "dev_hau.jsonl": "812741fd2908b033c3adad8ef66d1f5052e4ba4f89d20493c5225bae6e7abb4c",
+    "test_hau.jsonl": "a73e97865615b940e30d4ead218d12d6859d430fbf21dee847db562048004271",
+    "train_yor.jsonl": "6b51d3a1a7d0c19418f9831883d442bb0519f0d7fb5bec3ca50f1a00d5d9d823",
+    "dev_yor.jsonl": "6e8775ffbde40122b166b352fff5ce86234a732f72c2bdcadf4c6e5efda21c0e",
+    "test_yor.jsonl": "e5c48431abb63f1b289cc7a663947bf8c12cbd0ec50fa2e73edb1aff825ea196",
+    "train_swa.jsonl": "d329c498c11738f9596741b36a47b6764c093fe12bf814c30b38eb4d24f41a76",
+    "dev_swa.jsonl": "0ce49500dd48b826733fe112a7aad9ef0d5227fd2f313d8f8b7375bd36fcf837",
+    "test_swa.jsonl": "bcaead5457639273e703dada10c18da8be0e5df142cbc519bdcdc73f42a6e681",
+    "train_lug.jsonl": "05efdccef8286e87f69e11e76a7e4e06c909bf1f501d656121f084bfef07e5df",
+    "dev_lug.jsonl": "f3d26311342fc94aa2fc2ec70d078f0afa2a1e506f4d6c52a0303b347925fa1b",
+    "test_lug.jsonl": "534ff73f1720b99714adb751ea1d5736057acb8472156e15ba65c57a97e7b5a7"
+  },
+  "prompt": "Identify every named entity in this numbered token sequence. Use PER for a person, ORG for an organization, LOC for a location, and DATE for a date or time expression. Return only a JSON list of [start,end,\"TYPE\"] triples. Token numbering starts at 0. The start is included and the end is excluded. Return [] if there is no entity.\n\nTokens:\n{words}",
+  "prefill": "Entities:",
+  "max_train_context": 1536,
+  "generation": {
+    "max_model_len": 1536,
+    "max_new_tokens": 160
+  },
+  "longest_eval_prompt_tokens": 532,
+  "scorer": "seqeval 1.2.2 default entity-level micro-F1",
+  "prepare_sha256": "1d85353490eaa30b276d580cbd84d51d008ad4c1488d54b86b42a926693e37c4"
+}

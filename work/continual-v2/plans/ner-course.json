@@ -1,0 +1,230 @@
+{
+  "benchmark": "ner",
+  "arm": "course-v2",
+  "order": [
+    "swa",
+    "lug",
+    "ibo",
+    "yor",
+    "hau"
+  ],
+  "seed": 42,
+  "learning_rate": 5e-05,
+  "warmup_steps": 16,
+  "micro_batch": 4,
+  "steps_per_stage": 64,
+  "max_context": 1536,
+  "protocol": "outputs/masakhaner2-sequential-v1/protocol.json",
+  "protocol_sha256": "409a42a9e0f97df7eacab054f6b1b1f278144fa295f2d6d9ca80835033ccf403",
+  "matched_lora": {
+    "swa": {
+      "path": "local/checkpoints/masakhaner2_sequential_v1_20261121/single/swa/step-064",
+      "certificate_sha256": "b34c641183784076ca7ce1d5f02fa0bec5a2543e338a4d2c9ee6fa171f71f2de",
+      "step": 64,
+      "score": {
+        "path": "local/logs/masakhaner2_sequential_v1_20261121/controls/dev/single_swa/swa.DONE.json",
+        "certificate_sha256": "72e0f74a993e160e01da8c47170fbdbf086091a6fd3a64c5108e631c4ed48bd0",
+        "f1": 69.30203829524397,
+        "n": 384,
+        "valid": 380
+      }
+    },
+    "lug": {
+      "path": "local/checkpoints/masakhaner2_sequential_v1_20261121/single/lug/step-064",
+      "certificate_sha256": "75d6a4fcc1d3a4672bb0b674327050c03531a6db6550d902fb3c716069108b09",
+      "step": 64,
+      "score": {
+        "path": "local/logs/masakhaner2_sequential_v1_20261121/controls/dev/single_lug/lug.DONE.json",
+        "certificate_sha256": "ad81ef46921e4fbd080640b4b7ffb527479e0ef4492ddfd9f71629d82f347594",
+        "f1": 63.31738437001594,
+        "n": 384,
+        "valid": 384
+      }
+    },
+    "ibo": {
+      "path": "local/checkpoints/continual_bench_v2_20261122/ner-screen/single/ibo/step-064",
+      "certificate_sha256": "88e34eba8601cf493efa6fb925929b4a4d81b88eac528f3efbb1b040b0eb546b",
+      "step": 64,
+      "score": {
+        "path": "local/logs/continual_bench_v2_20261122/ner-screen/single_ibo/dev/ibo.DONE.json",
+        "certificate_sha256": "7c49bd6949d74fafb2729e0d197afe1616b4e064c2f3e4fdff32aa1000eeed47",
+        "f1": 57.88113695090439,
+        "n": 384,
+        "valid": 382
+      }
+    },
+    "yor": {
+      "path": "local/checkpoints/masakhaner2_sequential_v1_20261121/single/yor/step-064",
+      "certificate_sha256": "c6ad24e0e623461f764985fc1b7b5ac91c19c2cb7210e5b660a1a47080ec8b37",
+      "step": 64,
+      "score": {
+        "path": "local/logs/masakhaner2_sequential_v1_20261121/controls/dev/single_yor/yor.DONE.json",
+        "certificate_sha256": "659a06e6f0be8eb4399eb51d5588c50011ec9a25227c8116744299c6b5481441",
+        "f1": 40.21164021164021,
+        "n": 384,
+        "valid": 384
+      }
+    },
+    "hau": {
+      "path": "local/checkpoints/masakhaner2_sequential_v1_20261121/single/hau/step-064",
+      "certificate_sha256": "d206812355a04fb1165a063483107a2dc7135028dc03f9f9953a60ebc5b371b1",
+      "step": 64,
+      "score": {
+        "path": "local/logs/masakhaner2_sequential_v1_20261121/controls/dev/single_hau/hau.DONE.json",
+        "certificate_sha256": "52d143a7a27ea84123a4263ba0bfcb518d558fb99e1efc881e4ee77ba4212418",
+        "f1": 38.69731800766284,
+        "n": 384,
+        "valid": 381
+      }
+    }
+  },
+  "candidate_single_scores": {
+    "ibo": {
+      "path": "local/logs/continual_bench_v2_20261122/ner-screen/single_ibo/dev/ibo.DONE.json",
+      "certificate_sha256": "7c49bd6949d74fafb2729e0d197afe1616b4e064c2f3e4fdff32aa1000eeed47",
+      "f1": 57.88113695090439,
+      "n": 384,
+      "valid": 382,
+      "admissible": true
+    },
+    "kin": {
+      "path": "local/logs/continual_bench_v2_20261122/ner-screen/single_kin/dev/kin.DONE.json",
+      "certificate_sha256": "69cb70fc944463f05b8beaa4b2b5bfbc93737afeb746353952ee5519e8a762b6",
+      "f1": 40.33149171270718,
+      "n": 384,
+      "valid": 380,
+      "admissible": true
+    },
+    "zul": {
+      "path": "local/logs/continual_bench_v2_20261122/ner-screen/single_zul/dev/zul.DONE.json",
+      "certificate_sha256": "c47a2f11c516e83d805c35707190ceaccf3246b6b4439dcf7a6353e97f965357",
+      "f1": 32.46311010215665,
+      "n": 384,
+      "valid": 382,
+      "admissible": true
+    },
+    "wol": {
+      "path": "local/logs/continual_bench_v2_20261122/ner-screen/single_wol/dev/wol.DONE.json",
+      "certificate_sha256": "b69fd50248371968398d8774022d31741f0036086f819c89a228328f0052903d",
+      "f1": 54.20353982300885,
+      "n": 384,
+      "valid": 382,
+      "admissible": true
+    }
+  },
+  "sequential": [
+    {
+      "name": "01_swa",
+      "file": "train_swa.jsonl",
+      "rows": 1024,
+      "input_tokens": 265576,
+      "supervised_tokens": 19903
+    },
+    {
+      "name": "02_lug",
+      "file": "train_lug.jsonl",
+      "rows": 1024,
+      "input_tokens": 209210,
+      "supervised_tokens": 13733
+    },
+    {
+      "name": "03_ibo",
+      "file": "train_ibo.jsonl",
+      "rows": 1024,
+      "input_tokens": 281151,
+      "supervised_tokens": 12727
+    },
+    {
+      "name": "04_yor",
+      "file": "train_yor.jsonl",
+      "rows": 1024,
+      "input_tokens": 269925,
+      "supervised_tokens": 15513
+    },
+    {
+      "name": "05_hau",
+      "file": "train_hau.jsonl",
+      "rows": 1024,
+      "input_tokens": 252755,
+      "supervised_tokens": 15557
+    }
+  ],
+  "replay": [
+    {
+      "name": "01_swa",
+      "file": "train_swa.jsonl",
+      "rows": 1024,
+      "input_tokens": 265576,
+      "supervised_tokens": 19903
+    },
+    {
+      "name": "02_lug",
+      "file": "replay_lug.jsonl",
+      "rows": 1024,
+      "input_tokens": 209210,
+      "supervised_tokens": 13733
+    },
+    {
+      "name": "03_ibo",
+      "file": "replay_ibo.jsonl",
+      "rows": 1024,
+      "input_tokens": 281151,
+      "supervised_tokens": 12727
+    },
+    {
+      "name": "04_yor",
+      "file": "replay_yor.jsonl",
+      "rows": 1024,
+      "input_tokens": 269925,
+      "supervised_tokens": 15513
+    },
+    {
+      "name": "05_hau",
+      "file": "replay_hau.jsonl",
+      "rows": 1024,
+      "input_tokens": 252755,
+      "supervised_tokens": 15557
+    }
+  ],
+  "single": {
+    "swa": {
+      "rows": 1024,
+      "input_tokens": 265576,
+      "supervised_tokens": 19903
+    },
+    "lug": {
+      "rows": 1024,
+      "input_tokens": 209210,
+      "supervised_tokens": 13733
+    },
+    "ibo": {
+      "rows": 1024,
+      "input_tokens": 281151,
+      "supervised_tokens": 12727
+    },
+    "yor": {
+      "rows": 1024,
+      "input_tokens": 269925,
+      "supervised_tokens": 15513
+    },
+    "hau": {
+      "rows": 1024,
+      "input_tokens": 252755,
+      "supervised_tokens": 15557
+    }
+  },
+  "joint": {
+    "rows": 5120,
+    "input_tokens": 1278617,
+    "supervised_tokens": 77433
+  },
+  "data": "work/continual-v2/ner-course",
+  "manifest_sha256": "8555483ec5f978816d96228fc96a09e64bf5b93717b31d06ab96ac049039069d",
+  "candidate_base_dev": {
+    "path": "local/logs/continual_bench_v2_20261122/ner-screen/base/dev/ibo.DONE.json",
+    "certificate_sha256": "2d2a54af9547b6be3a5415ad3059aac2c1bb58a33bcae4cf2632e40ba76fce6d",
+    "f1": 0.0,
+    "n": 384,
+    "valid": 0
+  }
+}

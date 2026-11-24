@@ -1,0 +1,20 @@
+{
+  "benchmark": "ner",
+  "arm": "screen",
+  "order": [
+    "ibo",
+    "kin",
+    "zul",
+    "wol"
+  ],
+  "seed": 42,
+  "learning_rate": 5e-05,
+  "warmup_steps": 16,
+  "micro_batch": 4,
+  "steps_per_stage": 64,
+  "max_context": 1536,
+  "protocol": "outputs/masakhaner2-sequential-v1/protocol.json",
+  "protocol_sha256": "409a42a9e0f97df7eacab054f6b1b1f278144fa295f2d6d9ca80835033ccf403",
+  "data": "work/continual-v2/ner-screen",
+  "manifest_sha256": "0c65cab3d6099e8e18575f45968123bbf5b129b895187c207be21e1aa9db0221"
+}
